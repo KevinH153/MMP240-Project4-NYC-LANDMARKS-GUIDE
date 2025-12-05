@@ -15,44 +15,44 @@ CSS Variables
 :root {
     /* ------------------------------- Colors -----------------------------*/
     /* Base semantic palette */
-    --primary-color: #222222;
+    --primary-color: #1A1A2E;
     /* Primary text color */
-    --primary-bg: #ffffff;
+    --primary-bg: #F5F5F5;
     /* Primary background color */
-    --secondary-color: #f8f7f7;
+    --secondary-color: #FF4500;
     /* Secondary/alternative text color */
-    --secondary-bg: #135C52;
+    --secondary-bg: #424682;
     /* Secondary/alternative background color */
-    --accent-color: #E45F2B;
+    --accent-color: #00BFA6;
     /* Accent or brand color */
-    --accent-color2: #F6C445;
+    --accent-color2: #FF4500;
 
 
     /* Link + Button specific tokens */
-    --link-color: #0b57d0;
+    --link-color: #007BFF;
     /* Primary link/action color */
-    --link-hover-color: #0945a6;
+    --link-hover-color: #57EE0B;
     /* Darker for hover/focus */
-    --link-visited-color: #5a35a6;
+    --link-visited-color: #104A1B;
     /* Distinct visited state */
     --button-bg: var(--link-color);
     /* Primary button color (matches link) */
     --button-hover-bg: var(--link-hover-color);
     /* Hover button color (matches link hover) */
-    --button-text-color: #ffffff;
+    --button-text-color: #000000;
     /* Accessible contrast on button bg */
 
     /* Secondary link colors for use with secondary-bg color */
-    --secondary-link-color: #f4b71c;
-    --secondary-link-hover-color: #f9d67f;
-    --secondary-link-visited-color: #eec283;
+    --secondary-link-color: #F40EBE;
+    --secondary-link-hover-color: #14A5ED;
+    --secondary-link-visited-color: #2D13F1;
 
     --headerFooter-color: #eee;
     --headerFooter-bg: #333;
 
     /* ------------------------------- Typography -----------------------------*/
-    --font-primary: 'Lexend', sans-serif;
-    --font-heading: 'Merriweather', serif;
+    --font-primary: 'Open Sans', sans-serif;
+    --font-heading: 'Montserrat', serif;
 
     /* Font sizes ----------- */
     /* base font size. This is what rem units are calculated from */
