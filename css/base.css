@@ -107,7 +107,7 @@ CSS Variables
    Remember to add it back to your design if it needs it!
 */
 body {
-    margin: 0;
+    margin: 0 auto;
 }
 
 /* 3. Inherit fonts for SVG text
@@ -143,6 +143,8 @@ These are the styles that you write that will apply to the page. A couple of gen
 
 html {
     font-size: var(--font-size-base);
+    color: var(--primary-color);
+    background-color: var(--primary-bg);
 }
 
 body {

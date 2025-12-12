@@ -9,3 +9,171 @@ site-footer, img {
     max-height:1em;
     margin-left: .2em;
 }
+
+.Hero-Banner {
+    padding: 40px;
+    color: var(--secondary-color);
+    background-color: var(--secondary-bg);
+    margin: 30px;
+}
+
+.Intro {
+    padding: 40px;
+    color: var(--secondary-color);
+    background-color: var(--secondary-bg);
+    margin: 30px;
+}
+
+.Featured-Video {
+    padding: 40px;
+    color: var(--secondary-color);
+    background-color: var(--secondary-bg);
+    margin: 30px;
+}
+
+.Video-Content {
+    display: block;
+    align-content: center;
+    padding: 30px;
+    text-align: center;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+.Featured-Video h4 {
+    display: flex;
+    align-content: flex-start;
+}
+
+.section {
+    padding: 40px;
+    color: var(--secondary-color);
+    background-color: var(--secondary-bg);
+    margin: 30px;
+}
+
+.Content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+aside {
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+  position: relative;
+  border-radius: 24px;
+}
+
+/* Constrain inner content and add horizontal breathing room */
+.container {
+    width: min(100% - (2 * var(--spacing-md)), 70ch);
+    margin-inline: auto;
+    /* padding-inline: var(--spacing-md); */
+}
+
+.section h2 {
+    margin-top:var(--spacing-xs);
+}
+
+.grid h2{
+    grid-column: 1/-1
+}
+
+.cards{
+    display: grid;
+    grid-gap: var(--spacing-md);
+    grid-template-columns: 1fr;
+}
+
+.card {
+    color:var(--primary-color); background: var(--primary-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    padding-bottom: var(--spacing-md);
+}
+.card .description {
+    flex-grow: 1;
+}
+.card .info {
+    padding: var(--spacing-md);
+}
+.card .action{
+    margin-top: auto;
+    padding: var(--spacing-md);
+    text-align: center;
+    background-color: var(--secondary-link-color);
+    color: var(--button-text-color);
+    width: 100%;
+}
+
+.card .action:hover{
+    color: var(--secondary-link-hover-color);
+}
+
+.card .action:visited{
+    color: var(--secondary-link-visited-color);
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--text-size-xl);
+}
+
+footer {
+    color: var(--headerFooter-color);
+    background-color: var(--headerFooter-bg);
+    border-top: 3px solid #999;
+    padding-top: var(--spacing-md);
+}
+
+/* Your layout code goes here
+Here is a good place to put the code you have for your default layout. By default layout I mean the one that people see if there are no media queries. If you are doing mobile-first design this is where you would style the mobile look. If not then you can just do whatever it is you normally do for a site.
+*/
+    /* this applies to mobile in landscape and some tablets in portrait */
+    @media (min-width: 600px) {
+        .features {
+            grid-template-columns: 1fr 1fr;
+        }
+        .cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    /*   end min-width 600 */
+
+
+    /* this applies to tablets */
+    @media (min-width: 900px) {
+        .features {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+    /*   end min-width 900 */
+
+    /* this applies average laptops */
+    @media (min-width: 1200px) {
+        .boxes {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        }
+        .cards {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    /*   end min-width 1200 */
+
+    /* this applies to large laptops and desktops */
+    @media (min-width: 1800px) {
+
+    }
+
+/* end grid */
