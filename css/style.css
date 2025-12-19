@@ -10,25 +10,18 @@ site-footer, img {
     margin-left: .2em;
 }
 
-.Hero-Banner {
+.Hero-Banner, .Travel-Tips, .Intro, .Featured-Video, .section {
     padding: 40px;
     color: var(--secondary-color);
     background-color: var(--secondary-bg);
     margin: 30px;
+    flex-grow: 1;
+    border-radius: 12px;
 }
 
-.Intro {
-    padding: 40px;
-    color: var(--secondary-color);
-    background-color: var(--secondary-bg);
-    margin: 30px;
-}
-
-.Featured-Video {
-    padding: 40px;
-    color: var(--secondary-color);
-    background-color: var(--secondary-bg);
-    margin: 30px;
+.Gallery-h2 {
+    text-align: center;
+    padding: 20px;
 }
 
 .Video-Content {
@@ -38,19 +31,12 @@ site-footer, img {
     text-align: center;
     margin: auto;
     text-align: center;
-    position: relative;
+    overflow: hidden;
 }
 
 .Featured-Video h4 {
     display: flex;
     align-content: flex-start;
-}
-
-.section {
-    padding: 40px;
-    color: var(--secondary-color);
-    background-color: var(--secondary-bg);
-    margin: 30px;
 }
 
 .Content {
@@ -60,14 +46,37 @@ site-footer, img {
 }
 
 aside {
-  width: 30%;
   padding-left: 15px;
   margin-left: 15px;
   float: right;
   font-style: italic;
-  background-color: lightgray;
-  position: relative;
-  border-radius: 24px;
+  background-color: var(--secondary-bg);
+  overflow: hidden;
+}
+
+aside img {
+    overflow: hidden;
+    max-width: fit-content;
+    max-height: fit-content;
+    object-fit: contain;
+}
+
+details {
+    background-color: var(--accent-color);
+    border-radius: 15px;
+    max-width: fit-content;
+    color: var(--accent-color2);
+}
+
+details p {
+    text-align: center;
+}
+
+.description img {
+    overflow: hidden;
+    object-fit: contain;
+    max-width:fit-content;
+    max-height:fit-content;
 }
 
 /* Constrain inner content and add horizontal breathing room */
@@ -111,16 +120,16 @@ aside {
     margin-top: auto;
     padding: var(--spacing-md);
     text-align: center;
-    background-color: var(--secondary-link-color);
-    color: var(--button-text-color);
+    background-color: var(--secondary-button-bg);
+    color: var(--secondary-link-color);
     width: 100%;
 }
 
-.card .action:hover{
+.card .action:hover {
     color: var(--secondary-link-hover-color);
 }
 
-.card .action:visited{
+.card .action:visited {
     color: var(--secondary-link-visited-color);
 }
 
@@ -135,6 +144,7 @@ footer {
     background-color: var(--headerFooter-bg);
     border-top: 3px solid #999;
     padding-top: var(--spacing-md);
+    text-align: center;
 }
 
 /* Your layout code goes here

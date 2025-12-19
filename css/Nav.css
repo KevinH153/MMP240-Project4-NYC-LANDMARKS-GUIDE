@@ -35,6 +35,7 @@ header {
     color: var(--clr-nav);
     text-decoration: none;
     /* You will need to add the font styling (size, color etc) here */
+    font-size: 30px;
 }
 
 /* Hamburger button */
